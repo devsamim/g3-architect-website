@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css2?family=Azeret+Mono:ital,wght@0,100..900;1,100..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html{
+  font-family: "Work Sans", sans-serif;
+}
+/* share style */
+.display-flex{
+  display: flex;
+}
+.bg-color{
+  background-color: rgba(255, 144, 14, 0.1);;
+}
+/* dark 01 */
+.text-deep-black{
+  color: rgb(19, 19, 19);
+}
+/* dark-02 */
+.text-grey{
+color: rgb(66, 66, 66);
+}
+/* dark 03 */
+.text-light-grey{
+color: rgb(114, 114, 114);
+}
+
+
+/* header style */
+.header-container{
+  width: 1920px;
+  height: 1150px;
+  margin: 0px auto;
+  padding-top: 20px;
+  
+  
+  /* border: 2px solid red; */
+  background-color: rgba(255, 144, 14, 0.1);
+}
+.header-sub{
+ max-width: 1440px;
+ margin: 0 auto;
+ margin-top: 10px;
+
+}
+.brand{
+  font-size: 25px;
+}
+
+.navbar{
+  justify-content: space-between;
+  font-size: 10px;
+  font-weight: 600;
+}
+
+.nav-item{
+list-style: none;
+margin-right: 30px;
+}
+.nav-link{
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 500;
+}
+.nav-items a{
+  text-decoration: none;
+
+}
+.banner-content{
+  width: 862px;
+  height: 225px;
+  margin: 0 auto;
+ 
+  /* border: 2px solid red; */
+}
+.banner-img-container{
+  width: 1440px;
+  height: 750px;
+  /* border: 1px solid red; */
+  margin: 0 auto;
+  
+ 
+}
+.banner-img-container img{
+  width: 100%;
+  padding-top: 25px;
+
+}
+.banner-title{
+  font-size: 30px;
+  font-weight: 700;
+  text-align: center;
+  margin-top: 80px;
+}
+.banner-description{
+  font-size: 16px;
+  font-weight: 400;
+  text-align: center;
+  margin: 20px;
+}
+.btn{
+text-align: center;
+margin-top: 25px;
+margin-bottom: 25px;
+}
+.btn-primary{
+  width: 150px;
+  height: 60px;
+  border-radius: 8px;
+  background-color: rgb(255, 144, 14);
+  border: none;
+  font-size: 20px;
+  font-weight: 200;
+  color: rgb(255, 255, 255);
+ 
+
+}
+
+
+
+
+/* small or mobile device media query */
+@media screen and (max-width:576px) {
+  .navbar,.nav-links{
+    flex-direction: column;
+    margin-bottom: 10px;
+  }
+  .header-container,
+  .header-sub,
+  .banner-content,
+  .banner-img-container{
+    width: 100%;
+    padding: 15px;
+    margin-top: 0;
+    text-align: center;
+    
+  }
+  .banner-title{
+    margin-top: 0px;
+    margin-bottom: 50px;
+    font-size: 20px;
+  }
+  .banner-description{
+    margin-top: -28px;
+    margin-bottom: -17px;
+  }
+  .btn-primary{
+    width: 100px;
+    height: 40px;
+    font-size: 10px;
+  }
+  .nav-item{
+    margin-right: 0px;
+    margin-left: 0px;
+  }
+  .banner-img-container img{
+    width: 100%;
+    height: 50%;
+    background-image: cover;
+    margin-bottom: 200px;
+  }
+}
+
